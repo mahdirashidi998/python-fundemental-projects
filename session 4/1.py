@@ -1,0 +1,20 @@
+import turtle 
+wn=turtle.Screen()
+alex=turtle.Turtle() 
+wn.bgcolor('lightgreen')
+alex.color('hotpink')
+alex.pensize(3)
+def square(sz) :
+    alex.forward(sz)
+    alex.left(90)
+    alex.forward(sz)
+    alex.left(90)
+    alex.forward(sz)
+    alex.left(90)
+    alex.forward(sz)
+    alex.left(90)
+    alex.penup()
+    alex.forward(2*sz)
+    alex.pendown()
+for i in range(5) :
+    square(20)
